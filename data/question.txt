@@ -1,0 +1,262 @@
+- Cách mạng công nghiệp lần thứ tư là gì?
+- Tại sao cần cuộc cách mạng 4.0?
+- Chuyển đổi số là gì?
+- Quan hệ giữa Cách mạng công nghiệp lần thứ tư, chuyển đổi số và AI là gì?
+- Các cấp độ của chuyển đổi số là gì?
+- Số hóa là gì?
+- Cơ sở để xây dựng kế hoạch số hóa là gì?
+- Tại sao các thực thể có thể kết nối được vối nhau?
+- Kết nối không gian thực và không gian số là gì? Môi trường thực-số là gì?
+- Môi trường thực và môi trường số có ý nghĩa thế nào với chúng ta?
+- Tại sao cần thay đổi tổng thể và toàn diện trong chuyển đổi số?
+- Việt Nam có cơ hội chuyển đổi số không?
+- Tại sao chuyển đổi số là cơ hội cuối của chúng ta?
+- Quyết định số 749/QĐ-TTP của Thủ tướng Chính phủ là gì?
+- Yếu tố thành công của chuyển đổi số là gì?
+- Khó khăn và thách thức của chuyển đổi số là gì?
+- Tại sao nhận thức là yếu tố quan trọng hàng đầu của chuyển đổi số?
+- Rủi ro lớn nhất của chuyển đổi số là gì?
+- Tại sao an toàn, an ninh trên môi trường thực-số hết sức quan trọng?
+- Ví dụ về thành công do chuyển đổi số?
+- Ví dụ về thất bại do không chuyển đổi số?
+- Những hiểu lầm phổ biến về chuyển đổi số là gì?
+- Ai là người xây dựng chiến lược và lộ trình chuyển đổi số của tổ chức?
+- Các bước của chuyển đổi số?
+- Tại sao người lãnh đạo cao nhất quyết định thành bại của chuyển đổi số?
+- Hạ tầng số là gì?
+- Hạ tầng kỹ thuật số là gì?
+- Hạ tầng dữ liệu là gì?
+- Hạ tầng ứng dụng là gì?
+- Hạ tầng pháp lý là gì?
+- Hạ tầng nhân lực là gì?
+- Hiểu thế nào về  nền tảng số?
+- Vai trò của nền tảng trong chuyển đổi số là gì?
+- Tầm nhìn của Chương trình chuyển đổi số quốc gia là gì?
+- Quan điểm của Chương trình chuyển đổi số quốc gia là gì?
+- Nhiệm vụ và giải pháp trong Chương trình chuyển đổi số quốc gia là gì?
+- Bộ chỉ số đánh giá trong Chương trình chuyển đổi số quốc gia là gì?
+- Tại sao lại cẩn luật và chính sách dữ liệu?
+- An toàn, an ninh và tạo lập niềm tin của môi trường thực-số thế nào?
+- Thể chế cho chuyển đổi số được kiến tạo thế nào?
+- Tại sao cần sandbox cho chuyển đổi số?
+- Lộ trình chuyển đổi số là gì?
+- Kỹ năng cần thiết của người quản lý trong chuyển đổi số?
+- Mối quan hệ giữa ứng dụng công nghệ thông tin và chuyển đổi số là gì?
+- Vai trò của chuyên gia chuyển đổi số là gì?
+- Cơ chế điều phối triển khai của Chương trình chuyển đổi số quốc gia là gì?
+- Công nghệ số là gì?
+- Phân biệt giữa dữ liệu, thông tin, tri thức thế nào?
+- Dữ liệu được chia ra làm mấy loại?
+- Thế nào là dữ liệu đóng, chia sẻ và mở?
+- AI hiểu đơn giản là gì?
+- Tại sao học máy được nhiều người quan tâm?
+- Khoa học dữ liệu là gì?
+- AI và Khoa học dữ liệu giống và khác nhau thế nào?
+- Công nghệ điện toán đám mây là gì?
+- Chuyển đổi số bằng công nghệ điện toán đám mây là gì?
+- Công nghệ Internet vạn vật là gì?
+- Công nghệ chuỗi khối là gì?
+- Dữ liệu lớn là gì?
+- AI liên quan đến các công nghệ số khác thế nào?
+- Những điểm chung trong chiến lược AI của các nước là gì?
+- Tại sao AI là công nghệ số then chốt của chuyển đổi số?
+- Chính phủ điện tử là gì?
+- Chính phủ số là gì?
+- Điểm khác nhau giữa chính phủ điện tử và chính phủ số là gì?
+- Mục tiêu đến năm 2025 của Chương trình chuyển đổi số quốc gia về chính phủ số là gì?
+- Mục tiêu đến năm 2030 của Chương trình chuyển đổi số quốc gia về chính phủ số là gì?
+- Nhiệm vụ và giải pháp phát triển chính phủ số lằ gì?
+- Ví dụ về chính phủ số thành công?
+- Chính quyền số là gì?
+- Thành phố thông minh là gì?
+- Mối quan hệ giữa đô thị thông minh và chính quyền số?
+- Tại sao dữ liệu ở các bộ ngành và địa phương cần được chia sẻ?
+- Kiến trúc chính phủ điện tử/chính phủ số là gì?
+- Khung kiến trúc chính phủ điện tử/chính phủ số là gì?
+- Công nghệ số chủ yếu sử dụng trong chính phủ số là gì?
+- Rủi ro gặp phải khi phát triển chính phủ số là gì?
+- Các mức độ dịch vụ công trực tuyến là gì?
+- Tại sao phải phát triển chính phủ số?
+- Tại sao cần phân biệt chính phủ điện tử và chính phủ số?
+- Tại sao cần chuyển đổi sang sử dụng điện toán đám mây?
+- Tại sao phát triển chính phủ số lại dựa trên sử dụng các nền tảng?
+- Các cơ sở dữ liệu ưu tiên quốc gia là gì?
+- Xây dựng cơ sở dữ liệu của các bộ ngành và địa phương thế nào?
+- Tại sao cần chia sẻ dữ liệu?
+- Tại sao cần đào tạo kỹ năng số?
+- Nghị định số 47/2020/NĐ-CP của Chính phủ quy định về  việc gì?
+- Xây dựng chiến lược phát triển chính phủ số như thế nào?
+- Xây dựng kế hoạch hành động phát triển chính phủ số như thế nào?
+- Thiết lập tổ chức, bộ máy phát triển chính phủ số như thế nào?
+- Xây dựng hạ tầng phục vụ chính phủ số như thế nào?
+- Chia sẻ dữ liệu phục vụ chính phủ số như thế nào? 
+- Đào tạo kỹ năng số cho chính phủ số như thế nào?
+- Làm thế nào để quản lý rủi ro khi phát triển chính phủ số?
+- Số hóa văn bản hành chính và khai thác thế nào?
+- Thách thức trong cải cách thể chế cho chuyển đổi số?
+- Thách thức lởn nhất trong phát triển chính phủ số là gì?
+- Các lĩnh vực cần ưu tiên trong chương trình chuyển đổi số quốc gia là gì?
+- Chuyển đổi số trong lĩnh vực y tế có thể uy như thế nào?
+- Chuyển đổi số trong lĩnh vực nông nghiệp có thể như thế nào?
+- Chuyển đổi số trong lĩnh vực tài chính ngân hàng có thể như thế nào?
+- Chuyển đổi số trong ngành xây dựng có thể như thế nào?
+- Quốc gia nào thành công trong phát triển chính phủ số?
+- Khi nào phải phát triển chính phủ số?
+- Tìm kiếm nhân lực phát triển chính phủ số ở đâu?
+- Mười kiến nghị chuyển đổi số của bộ TT&TT với các tỉnh thành là gì?
+- Lãnh đạo đóng vai trò quan trọng trong phát triển chính phủ số?
+- Kinh tế số là gì?
+- Các loại hình tiêu biểu của kinh tế số là gi?
+- Mục tiêu đến năm 2025 của Chương trình chuyển đổi số quốc gia về kinh tế số là gì?
+- Mục tiêu đến năm 2030 của Chương trình chuyển đổi số quốc gia về kinh tế số là gì?
+- Nhiệm vụ và giải pháp phát triển kinh tế so là gì?
+- Khởi nghiệp và mô hình đột phá sáng tạo là gì?
+- MÔ hình kinh doanh sáng tạo vượt trội hay phá hủy là gì?
+- Có phải doanh nghiệp nào cũng có thể tham gia vào nền kinh tế số?
+- Thị trường thay đổi thế nào trong kỷ nguyên số?
+- Khách hàng thay đổi thế nào trong nền kinh tế số?
+- Cạnh tranh và hợp tác sẽ thay đổi thế nào?
+- Chuyển đổi số doanh nghiệp là gì?
+- Nội hàm của chuyển đổi số doanh nghiệp là gì?
+- Tại sao các doanh nghiệp cần chuyển đổi số?
+- Chuyển đổi số doanh nghiệp khác gì tin học hóa?
+- ERP là gì?
+- Ứng dụng ERP có phải là chuyển đổi số hay chưa?
+- RPA là gì?
+- Mô hình là gì?
+- Mô hình kinh doanh Canvas là gì?
+- Lập mô hình kinh doanh cá nhân không?
+- Số mô hình kinh doanh số đòi hỏi nhiều sáng tạo?
+- Vấn đề chính trong quan hệ khách hàng của doanh nghiệp là gì?
+- MÔ hình quan hệ khách hàng sẽ như thê nào trong thời đại số?
+- Làm thế nào đánh giá được sự hài lòng của khách hàng?
+- Điều kiện tiên quyết của chuyển đổi số là gì?
+- Doanh nghiệp trong nền kinh tế số?
+- Hướng phát triển của doanh nghiệp trong nền kinh tế số?
+- Làm thế nào để có các sản phẩm, dịch vụ mới vượt trội?
+- Nền tảng kinh doanh là gì?
+- Kết nối trong doanh nghiệp thế nào?
+- WFH là gì?
+- Làm sao để lựa chọn được công nghệ số cần thiết cho doanh nghiệp?
+- Vai trò của văn hóa số?
+- Văn hóa doanh nghiệp cần thay đổi thế nào trong thời chuyển đổi số?
+- Giá trị văn hóa nào là quan trọng nhất trong quá trình chuyển đổi số doanh nghiệp?
+- Lý do thất bại của chuyển đổi số doanh nghiệp?
+- Xây dựng lộ trình chuyển đổi số cho doanh nghiệp thế nào?
+- Những ai phải tham gia vào chuyển đổi số doanh nghiệp?
+- Bố trí nhân lực của doanh nghiệp thế nào khi chuyển đổi số?
+- Vãi trò của chuyên gia trong chuyển đổi số của doanh nghiệp?
+- Những kĩ năng cần thiết của lãnh đạo doanh nghiệp trong chuyển đổi số?
+- Phân tích kinh doanh là gì?
+- Các mô hình phân tích kinh doanh tiến hóa thế nào?
+- Doanh nghiệp thực hiện phân tích kinh doanh thế nào?
+- Vai trò của dữ liệu trong doanh nghiệp?
+- Có phải doanh nghiệp nào cũng cần dữ liệu lớn?
+- Vai trò của dữ liệu với doanh nghiệp trong kỷ nguyên số?
+- Vai trò chiến lược dữ liệu đối?
+- Đặt ra các câu hỏi kinh doanh chiến lược có ý nghĩa thế nào?
+- Phương pháp tăng cường khả năng thu thập dữ liệu?
+- Dữ liệu mở có ý nghĩa gì với chuyển đổi số doanh nghiệp?
+- Sử dụng dữ liệu để tối ưu hóa quy trình hoạt động thế nào?
+- Doanh nghiệp nhỏ và vừa trong nền kinh tế số?
+- Tại sao chuyển đổi số doanh nghiệp nhỏ và vừa lại quan trọng đối với nền kinh tế số?
+- Thuận lợi và khó khăn của doanh nghiệp vừa và nhỏ khi chuyển đổi số?
+- Tại sao doanh nghiệp vừa và nhỏ càng cần phải chuyển đổi số?
+- Các xu hướng khi chuyển đổi số các doanh nghiệp nhỏ và vừa trên thế giới?
+- Những nội dung quan trọng khi chuyển đổi số doanh nghiệp nhỏ và vừa?
+- Có thể mô tả một ví dụ doanh nghiệp vừa và nhỏ chuyển đổi số không?
+- Khi nào doanh nghiệp của tôi nên bắt đẩu chuyển đổi số?
+- Làm thế nào để biết chuyển đổi số hết bao lâu?
+- Kinh phí trong chuyển đổi số doanh nghiệp?
+- Các nguyên tắc chung để tiết kiệm trong đẩu tư cho chuyển đổi số là gì?
+- Xã hội số là gì?
+- Mối quan hệ giữa thành phố thông minh và xã hội số?
+- Công nghệ số ảnh hưởng đến cách sống của con người thế nào?
+- Giao tiếp xã hội trên môi trường số?
+- Các giá trị văn hóa xã hội thay đổi thế nào trên môi trường số?
+- Tiến bộ công nghệ yêu cầu con người thay đổi cách làm việc thế nào?
+- Những nghề bị ảnh hưởng nhiều nhất trong kỷ nguyên số?
+- Những nghề ít bị ảnh hưởng nhất trong kỷ nguyên số?
+- Tại sao chuyển đổi số cần lấy người dân làm trung tâm?
+- Chính phủ điện tử và chính phủ số đem lại gì cho người dân?
+- Kinh tế số đem lại gì cho mọi người?
+- Xã hội số đem lại những lợi ích gì cho con người?
+- Công dân số và quyền công dân số là gì?
+- Kiến thức và kỹ năng số cơ bản trên môi trường thực - số là gì?
+- Kỹ năng cẩn thiết cho người lao động trong thời chuyển đổi số là gì?
+- Công việc sẽ thay đổi trong thời chuyển đổi số?
+- Cần chuẩn bị gì trước chuyển đổi số?
+- Làm thế nào để sống an toàn trên môi trường số?
+- Chuyển đổi số đem lại lợi ích gì về chăm sóc sức khỏe?
+- Mục tiêu đến năm 2025 của Chương trình chuyển đổi số quốc gia về xã hội số là gì?
+- Mục tiêu đến năm 2030 của Chương trình chuyển đổi số quốc gia về  xã hội số là gì?
+- Nhiệm vụ và giải pháp cho xã hội số là gì?
+- Chuẩn bị nhân lực của tổ chức cho chuyển đổi số thế nào?
+- Trẻ em cần học gì để chuẩn bị cho tương lai số?
+- Giáo dục cần thay đổi thế nào trong thời chuyển đổi số?
+- Chuyển đổi số trong giáo dục và đào tạo có thể như thế nào?
+- Các trường đại học và cao đẳng thực hiện chuyển đổi số thế nào?
+- Yếu tố thành công của chuyển đổi số trong giáo dục và đào tạo là gì?
+- Chuyển đổi số có thực sự quan trọng đến thế không?
+- Cách mạng công nghiệp lần thứ tư là gì ?
+- Môi trường thực-số (môi trường số) là gì ?
+- Chuyển đổi số thực chất là gì ?
+- Các công nghệ số và trí tuệ nhân tạo ?
+- Các yếu tố quyết định thành bại của chuyển đổi số ?
+- Quá trình tiến hoá tới các hệ thống xã hội-vật lý-số ?
+- Mô hình hệ sinh thái thực-số của tổ chức ?
+- Hai nguyên lý cơ bản của chuyển đổi số là gì?
+- Ba cặp nguyên tắc của chuyển đổi số là gì?
+- Nguyên tắc thứ nhất của chuyển đổi số: tổng thể và toàn diện là gì ?
+- Nguyên tắc thứ hai của chuyển đổi số: đột phá và đồng bộ là gì ?
+- Nguyên tắc thứ ba của chuyển đổi số: chính chủ và lãnh đạo là gì?
+- Năm vấn đề cốt lõi của chuyển đổi số là gì?
+- Con người: nhận thức, năng lực số và văn hoá đổi mới sáng tạo là gì?
+- Thể chế: hành lang pháp lý, tiêu chuẩn và quy chuẩn kỹ thuật, và định chế nội bộ là gì
+- Công nghệ: hạ tầng số và nền tảng số là gì?
+- Lộ trình chuyển đổi số là gì
+- Quản trị thực thi là gì?
+- Bốn bước thực hiện chuyển đổl số là gì?
+- Mục tiêu của chuyển đổl số quốc gia là gì?
+- Ba trụ cột của chuyển đổi số quốc gia là gì?
+- Chính phủ số và chính quyền số là gì?
+- Kinh tế số là gì ?
+- Lý giải nguyên lý thứ nhất của st-235: chuyển đổi số quốc gia là quá trình tự thay đổi một cách hệ thống?
+- Lý giải nguyên lý thứ hai của st-235: chuyển đổi số quốc gia là quá trình đổi mới sáng tạo với dữ liệu và kết nối ?
+- Ba cặp nguyên tắc hành động của chuyển đổi số quốc gia là gì ?
+- Năm vấn đề cơ bản của chuyển đổi số quốc gia là gì?
+- Các lĩnh vực kinh tế-xã hội trong chuyển đổi số là gì?
+- Đích đến và hiện trạng của chuyển đổi số trong các lĩnh vực kinh tế-xã hội là gì?
+- Đích đến chuyển đổi số trong các lĩnh vực kinh tế-xã hội là gì?
+- Thực trạng chuyển đổi số trong các lĩnh vực kinh tế-xã hội là gì?
+- Đề án chuyển đổi số là gì?
+- Tại sao chuyên đổi số giáo dục đảm bảo phát triển bền vững?
+- Hệ sinh thái giáo dục trên môi trường thực-số là gì?
+- Chuyển đổi số một số lĩnh vực kinh tế-xã hội như thế nào?
+- Chuyển đổi số địa phương là gì?
+- Chuyển đổi số trong tổng thể chiến lược phát triển địa phương là gì?
+- Địa phương trong tổng thể chuyển đổl số quốc gia là gì?
+- Tỉnh-thành như một hệ thống thực-số là gì?
+- Chính quyên số và quản trị thông minh ở địa phương là gì?
+- Chuyển đổi số các lĩnh vực kinh tế-xã hội ở địa phương bao gồm những gì?
+- Chuyển đổi số các địa bàn như thế nào?
+- Dữ liệu và kết nối trong chuyển đổi số là gì?
+- Hạ tầng công nghệ trong địa phương số là gì?
+- Vận dụng hai nguyên lý chuyển đổi số trong chuyển đổi số địa phương như thế nào?
+- Ba cặp nguyên tắc cần tuân thủ trong chuyển đổi số địa phương là gì?
+- Năm nhóm vấn đề cần giải quyết đồng bộ trong chuyển đổi số địa phương là gì?
+- Mục tiêu chuyển đổi số doanh nghiệp là gì?
+- Hiện trạng và đích đến là gì?
+- Thông minh hoá sản phẩm và dịch vụ trong chuyển đổi số doanh nghiệp là gì?
+- Sản xuất-kinh doanh thông minh trong chuyển đổi số doanh nghiệp là gì?
+- Quản trị thông minh trong chuyển đổi số doanh nghiệp là gì?
+- Dữ liệu và kết nối trong chuyển đổi số doanh nghiệp là gì?
+- An ninh an toàn thông tin trong chuyển đổi số doanh nghiệp là gì?
+- Vai trò của con người trong doanh nghiệp số là gì?
+- Thể chế trong chuyển đổi số doanh nghiệp là gì?
+- Hạ tầng công nghệ số trong chuyển đổi số doanh nghiệp là gì?
+- Kế hoạch chuyển đổi số doanh nghiệp là gì?
+- Ba nguyên tắc chuyển đổi số doanh nghiệp là gì?
+- Năm vấn đề cần giải quyết đồng bộ trong chuyển đổi số doanh nghiệp là gì?
+- Các vấn đề trong khi tiến hành chuyển đổi số doanh nghiệp là gì?
+- Tại sao cần chuẩn bị bước tiếp theo trong chuyển đổi số doanh nghiệp?

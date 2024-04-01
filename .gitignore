@@ -1,0 +1,7 @@
+__pycache__/
+dbs/
+logs/
+models/
+tests/
+notebooks/
+
