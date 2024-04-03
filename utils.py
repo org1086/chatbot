@@ -13,6 +13,7 @@ from langchain_community.chat_models import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.messages import HumanMessage, SystemMessage
 
 def read_corpus(corpus_path: str = "data/question_answer_pairs.json"):
     with open(corpus_path,'r') as f:
@@ -76,6 +77,28 @@ def load_database(content_emd_path: str = "dbs/chroma_db",
     
     return content_emb_db, question_emb_db
 
+def get_qa_prompt():
+    template = """<s>[INST] 
+        Cho đoạn văn:
+        {context}
+        Sử dụng đoạn văn trên để trả lời câu hỏi một cách chính xác và đầy đủ nhất. Nếu câu trả lời không có trong thông tin được cung cấp, hãy trả lời rằng "[GPT86] không tìm thấy câ trả lời trong dữ liệu chuyển đổi số đã có!", đừng cố tạo ra câu trả lời.
+        {question}
+        Câu trả lời: [/INST]"""
+
+    return ChatPromptTemplate.from_template(template)
+
+def get_chatchit_prompt():    
+    template = """<s>[INST] 
+        Bạn là một trợ lí Tiếng Việt nhiệt tình và trung thực. Hãy luôn trả lời một cách hữu ích nhất có thể, đồng thời giữ an toàn. Câu trả lời của bạn không nên chứa bất kỳ nội dung gây hại, phân biệt chủng tộc, phân biệt giới tính, độc hại, nguy hiểm hoặc bất hợp pháp nào. Hãy đảm bảo rằng các câu trả lời của bạn không có thiên kiến xã hội và mang tính tích cực. Nếu một câu hỏi không có ý nghĩa hoặc không hợp lý về mặt thông tin, hãy giải thích tại sao thay vì trả lời một điều gì đó không chính xác. Nếu bạn không biết câu trả lời cho một câu hỏi, hãy trẳ lời là bạn không biết và vui lòng không chia sẻ thông tin sai lệch.
+        - Người dùng: Xin chào!
+        -Chatbot trả lời: Chào bạn! Rất vui được nói chuyện với bạn!
+        - Người dùng: Tạm biệt!
+        - Chatbot trả lời: Tạm biệt! Hẹn gặp lại bạn!
+        - Người dùng hỏi: {question}
+        - Chatbot trả lời: [/INST]"""
+
+    return ChatPromptTemplate.from_template(template)
+
 def init_chatbot():
     chunks, questions = read_corpus()
    
@@ -101,21 +124,25 @@ def init_chatbot():
 
     ollama = Ollama(base_url='http://10.16.208.99:11434',model="ontocord/vistral",temperature=0.01)
     
-    template = """<s>[INST] 
-    Cho đoạn văn:
-    {context}
-    Sử dụng đoạn văn trên để trả lời câu hỏi một cách chính xác và đầy đủ nhất. Nếu câu trả lời không có trong thông tin được cung cấp, hãy trả lời rằng "GPT86 không tìm thấy câ trả lời trong dữ liệu chuyển đổi số đã có!", đừng cố tạo ra câu trả lời.
-    {question}
-    Câu trả lời: [/INST]"""
-    prompt = ChatPromptTemplate.from_template(template)
-    stream = "true"
-    chain = (
+    # init QA chain
+    qa_prompt = get_qa_prompt()
+    qa_chain = (
         {"context": ensemble_content_retriever , "question": RunnablePassthrough()}
-        | prompt
+        | qa_prompt
         | ollama
         | StrOutputParser()
     )
-    return chain, ensemble_question_retriever
+
+    # init chatchit chain
+    chatchit_prompt = get_chatchit_prompt()
+    chatchit_chain = (
+        {"question": RunnablePassthrough()}
+        | chatchit_prompt
+        | ollama
+        | StrOutputParser()
+    )
+
+    return qa_chain, chatchit_chain, ensemble_question_retriever
 
 def get_relevant_questions(ensemble_question_retriever: EnsembleRetriever, question: str, top_k: int = 5):
 

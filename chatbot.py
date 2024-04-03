@@ -10,12 +10,19 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 CORS(app)
 
-chain, question_retriever = init_chatbot()
-# answer = chain.stream("số hóa là gì?")
+qa_chain, chatchit_chain, question_retriever = init_chatbot()
 
 def answer_question(user_question):
     
-    answer = chain.stream(user_question)
+    answer = qa_chain.stream(user_question)
+    gc.collect()
+    torch.cuda.empty_cache()
+    gc.collect()
+    return answer
+
+def answer_chatchit(user_question):
+    
+    answer = chatchit_chain.stream(user_question)
     gc.collect()
     torch.cuda.empty_cache()
     gc.collect()
@@ -39,6 +46,15 @@ def suggest_questions():
         relevant_questions = get_relevant_questions(question_retriever, user_question)
     
         return jsonify(relevant_questions)
+
+@app.route('/chatchit', methods=['GET', 'POST'])
+def ask_chatchit():
+    user_question = request.get_json()["user_question"]
+    if user_question:
+        # answer question (generator object)
+        answer = answer_chatchit(user_question)
+   
+        return Response(answer)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)
