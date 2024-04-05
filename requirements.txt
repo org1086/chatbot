@@ -8,3 +8,7 @@ sentence-transformers
 gpt4all
 faiss-cpu
 openai
+flask
+flask_cors
+chromadb
+rank_bm25
