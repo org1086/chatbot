@@ -81,19 +81,22 @@ def get_qa_prompt():
     template = """<s>[INST] 
         Cho đoạn văn:
         {context}
-        Sử dụng đoạn văn trên để trả lời câu hỏi một cách chính xác và đầy đủ nhất. Nếu câu trả lời không có trong thông tin được cung cấp, hãy trả lời rằng "[GPT86] không tìm thấy câ trả lời trong dữ liệu chuyển đổi số đã có!", đừng cố tạo ra câu trả lời.
+        Sử dụng đoạn văn trên để trả lời câu hỏi dưới đây một cách chính xác và đầy đủ nhất. Nếu câu trả lời không có trong thông tin được cung cấp, hãy trả lời rằng "[GPT86] không tìm thấy câu trả lời trong dữ liệu chuyển đổi số đã có!", đừng cố tạo ra câu trả lời. Lưu ý, chỉ trả lời bằng tiếng Việt và không dùng ký tự đặc biệt.
+        Câu hỏi:
         {question}
         Câu trả lời: [/INST]"""
 
     return ChatPromptTemplate.from_template(template)
 
 def get_chatchit_prompt():    
-    template = """<s>[INST] 
-        Bạn là một trợ lí Tiếng Việt nhiệt tình và trung thực. Hãy luôn trả lời một cách hữu ích nhất có thể, đồng thời giữ an toàn. Câu trả lời của bạn không nên chứa bất kỳ nội dung gây hại, phân biệt chủng tộc, phân biệt giới tính, độc hại, nguy hiểm hoặc bất hợp pháp nào. Hãy đảm bảo rằng các câu trả lời của bạn không có thiên kiến xã hội và mang tính tích cực. Nếu một câu hỏi không có ý nghĩa hoặc không hợp lý về mặt thông tin, hãy giải thích tại sao thay vì trả lời một điều gì đó không chính xác. Nếu bạn không biết câu trả lời cho một câu hỏi, hãy trẳ lời là bạn không biết và vui lòng không chia sẻ thông tin sai lệch.
+    template = """<s>[INST]
+        Bạn là một trợ lý Tiếng Việt nhiệt tình và trung thực. Hãy luôn trả lời một cách hữu ích nhất có thể, đồng thời giữ an toàn. Câu trả lời của bạn không nên chứa bất kỳ nội dung gây hại, phân biệt chủng tộc, phân biệt giới tính, độc hại, nguy hiểm hoặc bất hợp pháp nào. Hãy đảm bảo rằng các câu trả lời của bạn không có thiên kiến xã hội và mang tính tích cực. Nếu một câu hỏi không có ý nghĩa hoặc không hợp lý về mặt thông tin, hãy giải thích tại sao thay vì trả lời một điều gì đó không chính xác. Nếu bạn không biết câu trả lời cho một câu hỏi, hãy trẳ lời là bạn không biết và vui lòng không chia sẻ thông tin sai lệch.
         - Người dùng: Xin chào!
-        -Chatbot trả lời: Chào bạn! Rất vui được nói chuyện với bạn!
+        - Chatbot trả lời: Chào đồng chí! Rất vui được nói chuyện với đồng chí!
+        - Người dùng: chán quá đi mất
+        - Chatbot trả lời: Ai cũng có lúc chán nản, mệt mỏi. Chuyện này như cơm bữa ấy mà :) Tôi có thể giúp đỡ gì đồng chí không?
         - Người dùng: Tạm biệt!
-        - Chatbot trả lời: Tạm biệt! Hẹn gặp lại bạn!
+        - Chatbot trả lời: Tạm biệt! Hẹn gặp lại đồng chí!
         - Người dùng hỏi: {question}
         - Chatbot trả lời: [/INST]"""
 
@@ -108,19 +111,19 @@ def init_chatbot():
     # load embedding dbs
     content_emb_db,question_emb_db = load_database()
 
-    content_retriever = content_emb_db.as_retriever(search_kwargs={"k": 3})
+    content_retriever = content_emb_db.as_retriever(search_kwargs={"k": 2})
     question_retriever = question_emb_db.as_retriever(search_kwargs={"k": 5})
 
     bm25_content_retriever = BM25Retriever.from_texts(chunks, k=2)
-    bm25_question_retriever = BM25Retriever.from_texts(questions, k=2)
+    bm25_question_retriever = BM25Retriever.from_texts(questions, k=5)
 
     ensemble_content_retriever = EnsembleRetriever(
                         retrievers = [bm25_content_retriever, content_retriever], 
-                        weights=[0.7, 0.3])
+                        weights=[0.6, 0.4])
     
     ensemble_question_retriever = EnsembleRetriever(
                         retrievers = [bm25_question_retriever, question_retriever], 
-                        weights=[0.7, 0.3])                        
+                        weights=[0.6, 0.4])                        
 
     ollama = Ollama(base_url='http://10.16.208.99:11434',model="ontocord/vistral",temperature=0.01)
     
@@ -146,7 +149,7 @@ def init_chatbot():
 
 def get_relevant_questions(ensemble_question_retriever: EnsembleRetriever, question: str, top_k: int = 5):
 
-    relevant_questions = ensemble_question_retriever.invoke(question)
+    relevant_questions = ensemble_question_retriever.invoke(normalize_question(question))
 
     results = {"question": question, "relevant_questions": []}
     unique_questions = []
@@ -159,6 +162,9 @@ def get_relevant_questions(ensemble_question_retriever: EnsembleRetriever, quest
                 unique_questions.append(lower_rel_question)
     
     return results
+
+def normalize_question(question: str):
+    return question.lower().rstrip("? ")
 
 def segment_long_text(long_text: str, max_length: int = 512, sliding_thresh: int = 256):
     """
@@ -248,3 +254,27 @@ def segment_long_text(long_text: str, max_length: int = 512, sliding_thresh: int
         paragraphs.append(joint_passages)
 
     return paragraphs
+
+if __name__ == "__main__":
+    query = "Công nghệ thông tin là gì?"
+    
+    chunks, questions = read_corpus()
+   
+    # create embeding database - once
+    create_database(chunks=chunks, questions=questions)
+
+    # load embedding dbs
+    content_emb_db,question_emb_db = load_database()
+
+    content_retriever = content_emb_db.as_retriever(search_kwargs={"k": 2})
+
+    bm25_content_retriever = BM25Retriever.from_texts(chunks, k=2)
+
+    ensemble_content_retriever = EnsembleRetriever(
+                        retrievers = [bm25_content_retriever, content_retriever], 
+                        weights=[0.6, 0.4])
+    
+    print (f"-----------------------------------------------------------------------")
+    print (f">> semantic content retriver: {content_retriever.invoke(query)}")
+    print (f">> bm25 content retriver: {bm25_content_retriever.invoke(query)}")
+    print (f"ensemble content retriver: {ensemble_content_retriever.invoke(query)}")
