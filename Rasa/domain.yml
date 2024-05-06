@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - greets
+  - question
+
+responses:
+  utter_greets:
+  - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+  - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+  - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
+
+#   utter_goodbye:
+#   - text: "Bye"
+#   - text: "Tạm biệt bạn!"
+#   - text: "Tạm biệt!\nHẹn gặp lại!"
+
+
+
+  
+  
+actions:
+  - action_hello_world
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
