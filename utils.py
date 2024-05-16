@@ -125,7 +125,7 @@ def init_chatbot():
                         retrievers = [bm25_question_retriever, question_retriever], 
                         weights=[0.6, 0.4])                        
 
-    ollama = Ollama(base_url='http://10.16.208.99:11434',model="ontocord/vistral",temperature=0.01)
+    ollama = Ollama(base_url='http://192.168.1.99:11434',model="ontocord/vistral",temperature=0.01)
     
     # init QA chain
     qa_prompt = get_qa_prompt()
