@@ -2,7 +2,7 @@ __pycache__/
 dbs/
 logs/
 models/
-tests/
 notebooks/
 Rasa/.rasa/
 Rasa/data
+Rasa/tests/
